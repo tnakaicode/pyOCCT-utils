@@ -15,21 +15,21 @@
 ##You should have received a copy of the GNU Lesser General Public License
 ##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>
 
-from OCC.BRep import BRep_Tool_Surface, BRep_Tool
-from OCC.BRepTopAdaptor import BRepTopAdaptor_FClass2d
-from OCC.Geom import Geom_Curve
-from OCC.GeomAPI import GeomAPI_ProjectPointOnSurf
-from OCC.GeomLib import GeomLib_IsPlanarSurface
-from OCC.TopAbs import TopAbs_IN
-from OCC.TopExp import topexp
-from OCC.TopoDS import TopoDS_Vertex, TopoDS_Face, TopoDS_Edge
-from OCC.GeomLProp import GeomLProp_SLProps
-from OCC.BRepTools import breptools_UVBounds
-from OCC.BRepAdaptor import BRepAdaptor_Surface, BRepAdaptor_HSurface
-from OCC.ShapeAnalysis import ShapeAnalysis_Surface
-from OCC.GeomProjLib import geomprojlib
-from OCC.Adaptor3d import Adaptor3d_IsoCurve
-from OCC.gp import gp_Pnt2d, gp_Dir
+from OCCT.BRep import BRep_Tool_Surface, BRep_Tool
+from OCCT.BRepTopAdaptor import BRepTopAdaptor_FClass2d
+from OCCT.Geom import Geom_Curve
+from OCCT.GeomAPI import GeomAPI_ProjectPointOnSurf
+from OCCT.GeomLib import GeomLib_IsPlanarSurface
+from OCCT.TopAbs import TopAbs_IN
+from OCCT.TopExp import topexp
+from OCCT.TopoDS import TopoDS_Vertex, TopoDS_Face, TopoDS_Edge
+from OCCT.GeomLProp import GeomLProp_SLProps
+from OCCT.BRepTools import breptools_UVBounds
+from OCCT.BRepAdaptor import BRepAdaptor_Surface, BRepAdaptor_HSurface
+from OCCT.ShapeAnalysis import ShapeAnalysis_Surface
+from OCCT.GeomProjLib import geomprojlib
+from OCCT.Adaptor3d import Adaptor3d_IsoCurve
+from OCCT.gp import gp_Pnt2d, gp_Dir
 
 from OCCUtils.base import BaseObject
 from OCCUtils.edge import Edge
@@ -379,7 +379,7 @@ class Face(TopoDS_Face, BaseObject):
         return self.__repr__()
 
 if __name__ == "__main__":
-    from OCC.BRepPrimAPI import BRepPrimAPI_MakeSphere
+    from OCCT.BRepPrimAPI import BRepPrimAPI_MakeSphere
     sph = BRepPrimAPI_MakeSphere(1, 1).Face()
     fc = Face(sph)
     print(fc.is_trimmed())

@@ -28,21 +28,21 @@ import types
 import sys
 import time
 
-from OCC.gp import gp_Pnt
-from OCC.BRepAdaptor import BRepAdaptor_HCurve
-from OCC.BRep import BRep_Tool
-from OCC.ShapeAnalysis import ShapeAnalysis_Surface
-from OCC.GeomLProp import GeomLProp_SLProps
-from OCC.BRepFill import BRepFill_CurveConstraint
-from OCC.GeomPlate import (GeomPlate_MakeApprox,
+from OCCT.gp import gp_Pnt
+from OCCT.BRepAdaptor import BRepAdaptor_HCurve
+from OCCT.BRep import BRep_Tool
+from OCCT.ShapeAnalysis import ShapeAnalysis_Surface
+from OCCT.GeomLProp import GeomLProp_SLProps
+from OCCT.BRepFill import BRepFill_CurveConstraint
+from OCCT.GeomPlate import (GeomPlate_MakeApprox,
                            GeomPlate_BuildPlateSurface,
                            GeomPlate_PointConstraint)
-from OCC.IGESControl import IGESControl_Reader
-from OCC.IFSelect import (IFSelect_RetDone,
+from OCCT.IGESControl import IGESControl_Reader
+from OCCT.IFSelect import (IFSelect_RetDone,
                           IFSelect_ItemsByEntity)
-from OCC.Display.SimpleGui import init_display
-from OCC.TopoDS import TopoDS_Compound
-from OCC.BRep import BRep_Builder
+from OCCT.Display.SimpleGui import init_display
+from OCCT.TopoDS import TopoDS_Compound
+from OCCT.BRep import BRep_Builder
 display, start_display, add_menu, add_function_to_menu = init_display()
 
 

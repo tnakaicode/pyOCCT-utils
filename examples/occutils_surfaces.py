@@ -20,7 +20,7 @@
 import sys
 from itertools import chain
 
-from OCC.Display.SimpleGui import init_display
+from OCCT.Display.SimpleGui import init_display
 
 sys.path.append('..')
 from OCCUtils.Common import points_to_bspline

@@ -37,14 +37,14 @@ Can be a module, class or namespace.
 
 import functools
 
-from OCC.BRepBuilderAPI import BRepBuilderAPI_Copy
-from OCC.BRepGProp import (brepgprop_VolumeProperties,
+from OCCT.BRepBuilderAPI import BRepBuilderAPI_Copy
+from OCCT.BRepGProp import (brepgprop_VolumeProperties,
                            brepgprop_LinearProperties,
                            brepgprop_SurfaceProperties)
-from OCC.BRepCheck import (BRepCheck_Vertex, BRepCheck_Edge, BRepCheck_Wire,
+from OCCT.BRepCheck import (BRepCheck_Vertex, BRepCheck_Edge, BRepCheck_Wire,
                            BRepCheck_Face, BRepCheck_Shell, BRepCheck_Analyzer)
-from OCC.GProp import GProp_GProps
-from OCC.Display.SimpleGui import init_display
+from OCCT.GProp import GProp_GProps
+from OCCT.Display.SimpleGui import init_display
 
 from OCCUtils.Common import get_boundingbox
 from OCCUtils.Construct import (make_vertex, TOLERANCE)

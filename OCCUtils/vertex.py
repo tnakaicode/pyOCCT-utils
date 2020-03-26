@@ -15,9 +15,9 @@
 ##You should have received a copy of the GNU Lesser General Public License
 ##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>
 
-from OCC.gp import gp_Pnt, gp_Vec, gp_Dir, gp_XYZ, gp_Pnt2d
-from OCC.TopoDS import TopoDS_Vertex
-from OCC.ShapeBuild import ShapeBuild_ReShape
+from OCCT.gp import gp_Pnt, gp_Vec, gp_Dir, gp_XYZ, gp_Pnt2d
+from OCCT.TopoDS import TopoDS_Vertex
+from OCCT.ShapeBuild import ShapeBuild_ReShape
 
 from OCCUtils.base import BaseObject
 from OCCUtils.Construct import make_vertex

@@ -21,17 +21,17 @@ from __future__ import print_function
 
 __all__ = ['Topo', 'WireExplorer', 'dumpTopology']
 
-from OCC.BRep import BRep_Tool
+from OCCT.BRep import BRep_Tool
 
-from OCC.BRepTools import BRepTools_WireExplorer
-from OCC.TopAbs import (TopAbs_VERTEX, TopAbs_EDGE, TopAbs_FACE, TopAbs_WIRE,
+from OCCT.BRepTools import BRepTools_WireExplorer
+from OCCT.TopAbs import (TopAbs_VERTEX, TopAbs_EDGE, TopAbs_FACE, TopAbs_WIRE,
                         TopAbs_SHELL, TopAbs_SOLID, TopAbs_COMPOUND,
                         TopAbs_COMPSOLID)
-from OCC.TopExp import TopExp_Explorer, topexp_MapShapesAndAncestors
-from OCC.TopTools import (TopTools_ListOfShape,
+from OCCT.TopExp import TopExp_Explorer, topexp_MapShapesAndAncestors
+from OCCT.TopTools import (TopTools_ListOfShape,
                           TopTools_ListIteratorOfListOfShape,
                           TopTools_IndexedDataMapOfShapeListOfShape)
-from OCC.TopoDS import (topods, TopoDS_Wire, TopoDS_Vertex, TopoDS_Edge,
+from OCCT.TopoDS import (topods, TopoDS_Wire, TopoDS_Vertex, TopoDS_Edge,
                         TopoDS_Face, TopoDS_Shell, TopoDS_Solid,
                         TopoDS_Compound, TopoDS_CompSolid, topods_Edge,
                         topods_Vertex, TopoDS_Iterator)
